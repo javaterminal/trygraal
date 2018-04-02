@@ -25,7 +25,7 @@ image::images/print-screen.png[width=900]
 
 [source,bash]
 ----
-docker run -it --rm -p 8080:8080 rahmanusta/trygraal
+docker run -it --rm -p 80:80 rahmanusta/trygraal
 ----
 
 == License

@@ -1,3 +1,3 @@
-docker run -dit -p 8080:8080 --restart unless-stopped --name=trygraal rahmanusta/trygraal
+docker run -dit -p 80:80 --restart unless-stopped --name=trygraal rahmanusta/trygraal
 
-docker run -it -p 8080:8080 --rm rahmanusta/trygraal
+docker run -it -p 80:80 --rm rahmanusta/trygraal

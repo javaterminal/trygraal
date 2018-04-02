@@ -12,8 +12,8 @@ import java.nio.file.Paths;
 public class NanoApp extends NanoWSD {
 
     public static void main(String[] args) throws IOException {
-        new NanoApp("0.0.0.0", 8080).start(2 * 60 * 1000, false);
-        System.out.println("\nRunning! Point your browsers to http://localhost:8080/ \n");
+        new NanoApp("0.0.0.0", 80).start(2 * 60 * 1000, false);
+        System.out.println("\nRunning! Point your browsers to http://localhost:80/ \n");
     }
 
     public NanoApp(String hostname, int port) {
