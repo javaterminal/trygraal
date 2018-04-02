@@ -1,2 +1,2 @@
 call mvn clean install
-call docker build -t rahmanusta/tryjshell .
+call docker build -t rahmanusta/trygraal .

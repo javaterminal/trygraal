@@ -1,6 +1,6 @@
-package com.kodedu.tryjshell.nano;
+package com.kodedu.trygraal.nano;
 
-import com.kodedu.tryjshell.websocket.TerminalSocket;
+import com.kodedu.trygraal.websocket.TerminalSocket;
 import fi.iki.elonen.NanoHTTPD;
 import fi.iki.elonen.NanoWSD;
 
@@ -29,7 +29,7 @@ public class NanoApp extends NanoWSD {
     protected Response serveHttp(IHTTPSession session) {
         String contentType = null;
         try {
-//            Path root = Paths.get("C:\\Users\\usta\\tryjshell\\src\\main\\resources\\public");
+//            Path root = Paths.get("C:\\Users\\usta\\trygraal\\src\\main\\resources\\public");
 
             String uri = session.getUri();
 

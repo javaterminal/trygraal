@@ -1,11 +1,11 @@
-package com.kodedu.tryjshell.service;
+package com.kodedu.trygraal.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.kodedu.tryjshell.helper.IOHelper;
-import com.kodedu.tryjshell.helper.ThreadHelper;
-import com.kodedu.tryjshell.nano.NanoApp;
-import com.kodedu.tryjshell.process.ProcessWrapper;
-import com.kodedu.tryjshell.websocket.TerminalSocket;
+import com.kodedu.trygraal.helper.IOHelper;
+import com.kodedu.trygraal.helper.ThreadHelper;
+import com.kodedu.trygraal.nano.NanoApp;
+import com.kodedu.trygraal.process.ProcessWrapper;
+import com.kodedu.trygraal.websocket.TerminalSocket;
 import com.pty4j.PtyProcess;
 import com.pty4j.WinSize;
 
@@ -41,7 +41,7 @@ public class TerminalService {
     public synchronized void addSingleProcess() {
 
         String tmpDir = System.getProperty("java.io.tmpdir");
-        Path dataDir = Paths.get(tmpDir).resolve(".terminalfx");
+        Path dataDir = Paths.get(tmpDir).resolve(".graal_tmp");
         IOHelper.copyLibPty(dataDir);
 
 //        Path systemRoot = Files.createTempDirectory(Paths.get(tmpDir), "systemRoot");
@@ -79,13 +79,7 @@ public class TerminalService {
     }
 
     public void init() {
-
         shellStarter = System.getenv("shell");
-
-        if (Objects.isNull(shellStarter)) {
-            shellStarter = "jshell.exe";
-        }
-
     }
 
     public void onTerminalInit() {
@@ -167,7 +161,7 @@ public class TerminalService {
 
             if (!firstSent) {
                 firstSent = true;
-                this.onCommand(outputWriter, "/set editor /usr/bin/vim\n");
+//                this.onCommand(outputWriter, "/set editor /usr/bin/vim\n");
             }
         }
 

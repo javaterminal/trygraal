@@ -1,17 +1,17 @@
-= tryjshell.org
+= trygraal.org
 Rahman Usta
 :doctype: article
 :encoding: utf-8
 :lang: en
 :toc: left
 :numbered:
-:description: tryjshell.org is a web terminal to test Java 9 and Java 10 features on JSHELL
+:description: trygraal.org is a web terminal to test Java 9 and Java 10 features on JSHELL
 :author: Rahman Usta
 :keywords: web,terminal,java-9,java-10,jshell,tty,docker,cloud
 
 == About
 
-tryjshell.org is a web terminal to try and test Java 9 and Java 10 experimental features on the JShell tool.
+trygraal.org is a web terminal to try and test Java 9 and Java 10 experimental features on the JShell tool.
 
 image::images/print-screen.png[width=900]
 
@@ -19,15 +19,15 @@ image::images/print-screen.png[width=900]
 
 === Run on Web
 
-*Open:* https://tryjshell.org
+*Open:* https://trygraal.org
 
 === Run on Docker
 
 [source,bash]
 ----
-docker run -it --rm -p 8080:8080 rahmanusta/tryjshell
+docker run -it --rm -p 8080:8080 rahmanusta/trygraal
 ----
 
 == License
 
-https://github.com/javaterminal/tryjshell/blob/master/LICENSE[MIT]
+https://github.com/javaterminal/trygraal/blob/master/LICENSE[MIT]

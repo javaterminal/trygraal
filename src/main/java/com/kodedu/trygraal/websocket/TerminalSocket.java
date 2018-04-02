@@ -1,10 +1,10 @@
-package com.kodedu.tryjshell.websocket;
+package com.kodedu.trygraal.websocket;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.kodedu.tryjshell.helper.ThreadHelper;
-import com.kodedu.tryjshell.nano.NanoApp;
-import com.kodedu.tryjshell.service.TerminalService;
+import com.kodedu.trygraal.helper.ThreadHelper;
+import com.kodedu.trygraal.nano.NanoApp;
+import com.kodedu.trygraal.service.TerminalService;
 import fi.iki.elonen.NanoHTTPD;
 import fi.iki.elonen.NanoWSD;
 

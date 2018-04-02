@@ -1,4 +1,4 @@
-package com.kodedu.tryjshell.helper;
+package com.kodedu.trygraal.helper;
 
 import java.io.Closeable;
 import java.io.IOException;

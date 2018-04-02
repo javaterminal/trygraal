@@ -1,1 +1,1 @@
-docker push rahmanusta/tryjshell
+docker push rahmanusta/trygraal

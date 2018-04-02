@@ -1,4 +1,4 @@
-package com.kodedu.tryjshell.helper;
+package com.kodedu.trygraal.helper;
 
 import java.util.concurrent.*;
 
@@ -18,7 +18,7 @@ public class ThreadHelper {
     }
 
     public static void start(Runnable runnable) {
-        Thread thread = new Thread(runnable, "JShell I/O");
+        Thread thread = new Thread(runnable, "Graal I/O");
         thread.start();
     }
 

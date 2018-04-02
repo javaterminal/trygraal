@@ -1,16 +1,17 @@
 FROM openjdk:10-jdk-slim
 MAINTAINER Rahman Usta
-ENV shell="/usr/bin/jshell"
+ENV shell="/opt/graalvm/bin/polyglot --shell"
 RUN apt-get update -y && apt-get install sudo vim -y
-#VOLUME /tmp
-WORKDIR /opt/tryjshell/
-COPY target/tryjshell.jar .
-RUN useradd -ms /bin/bash tryjshell
-RUN chmod -R  a-w / || true
-RUN chmod -R  a+w /tmp || true
-RUN chmod -R  a+w /home/tryjshell/ || true
-RUN chmod -R  a+x /usr/bin/java || true
-RUN chmod -R  a+x /usr/bin/jshell || true
-RUN chmod -R  a+x+r /usr/bin/vim || true
-USER tryjshell
-CMD ["java","-jar","./tryjshell.jar"]
+VOLUME /tmp
+WORKDIR /opt/trygraal/
+COPY ../graalvm-0.32 /opt/graalvm
+COPY target/trygraal.jar .
+#RUN useradd -ms /bin/bash trygraal
+#RUN chmod -R  a-w / || true
+#RUN chmod -R  a+w /tmp || true
+#RUN chmod -R  a+w /home/trygraal/ || true
+#RUN chmod -R  a+x /usr/bin/java || true
+#RUN chmod -R  a+x /usr/bin/jshell || true
+#RUN chmod -R  a+x+r /usr/bin/vim || true
+#USER trygraal
+CMD ["java","-jar","./trygraal.jar"]

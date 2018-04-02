@@ -4,17 +4,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>tryjshell</artifactId>
+    <artifactId>trygraal</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>tryjshell</name>
-    <description>trysjhell Web Terminal</description>
+    <name>trygraal</name>
+    <description>trygraal Web Terminal</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.9</java.version>
+        <java.version>1.8</java.version>
         <maven-jar-plugin.version>3.0.2</maven-jar-plugin.version>
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
     </properties>
@@ -61,7 +61,7 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>${maven-jar-plugin.version}</version>
                 <configuration>
-                    <finalName>tryjshell</finalName>
+                    <finalName>trygraal</finalName>
                 </configuration>
             </plugin>
             <plugin>
@@ -84,11 +84,11 @@
                             <goal>single</goal>
                         </goals>
                         <configuration>
-                            <finalName>tryjshell</finalName>
+                            <finalName>trygraal</finalName>
                             <archive>
                                 <manifest>
                                     <mainClass>
-                                        com.kodedu.tryjshell.nano.NanoApp
+                                        com.kodedu.trygraal.nano.NanoApp
                                     </mainClass>
                                 </manifest>
                             </archive>

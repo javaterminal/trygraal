@@ -1,4 +1,4 @@
-package com.kodedu.tryjshell.process;
+package com.kodedu.trygraal.process;
 
 import com.pty4j.PtyProcess;
 
