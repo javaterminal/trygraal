@@ -11,5 +11,5 @@ RUN chmod -R  a-w / || true
 RUN chmod -R  a+w /tmp || true
 RUN chmod -R  a+w /home/trygraal/ || true
 RUN chmod -R  a+x /opt/graalvm/bin/polyglot || true
-USER tryjshell
+USER trygraal
 CMD ["java","-jar","./trygraal.jar"]
